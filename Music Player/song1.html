@@ -1,0 +1,109 @@
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+<!--   START COMMENT
+           HTML document name: song1.html   
+This html document plays the first song and sets up the menu for the
+juke box. The menu is where you select what song plays next,
+and what songs you want to hear either manually or automatically
+.. one right after the other with no user intervention
+
+The meta refresh in this file is timed in seconds to the length of what ever
+song you want playing. When the time, in this case "432" expires, this file
+will "refresh" and call the next HTML song file and start the sequence all over
+again.  Change the "432" value in the meta tag below for EACH song page
+to reflect the length in seconds of the song on that page.
+at the end of that time, this page will "refresh" to the next song page
+in the list.  In this case, since this file is "song1.html", the next file to
+"refresh" to in the meta tag below will be "song2.html".
+You can have as many song HTML files as you choose, as long
+as each has a unique name.  (i.e. song1.html, song2.html, etc...)
+END COMMENT -->
+
+<meta http-equiv="refresh" content="250; url=song2.html">
+
+<title>JukeBox</title>
+
+<!--   START COMMENT
+Set your link style to what ever you want below.
+END COMMENT -->
+
+<style type="text/css">
+a:link {color:red;text-decoration:none;font-weight:bold;}
+a:visited {color:green;text-decoration:none;}
+a:hover {color:yellow;text-decoration:none;}
+a:active {color:green;text-decoration:none;}
+</style>
+
+</head>
+
+<!--   START COMMENT
+Set your style/attributes to what ever you want in the "body" tag below.
+END COMMENT -->
+
+<body bgcolor=black style="color:blue; font-Showcard Gothic, Arial; font-size:17px">
+<center>
+Song now playing:<br>
+
+
+<!--   START COMMENT
+Enter the name of the song you want displayed below
+and change the style/color to whatever you want.
+END COMMENT -->
+
+<marquee behavior=scroll direction=left><span style="color:white">Eminem - Fast Lane</span></marquee>
+
+<br>
+
+<img src="bad meets evil.jpg" height=200 width=200 ></img>
+<br><br>
+
+
+<!--  START COMMENT
+MP3 Flash Player Object-n-Embed coding starts here                
+This is where you embed the first song in your Jukebox...
+The ONLY values to change below are the 2 instances of the
+location of the music file (using the complete URL)
+In this case, that value is "http://www.suggest-a-fix.com/articles/html/06%20Eagles%20-%20Hotel%20California.mp3"
+You will change that URL below to the EXACT location of YOUR music file
+instead of referencing the location of this sample music file
+END COMMENT -->
+
+<table border="0" cellpadding="0" cellspacing="0"><tr><td>
+
+<object type="application/x-shockwave-flash" data="Jukebox.swf" width="200" height="50">
+	<param name="wmode" value="transparent" />
+	<param name="movie" value="Jukebox.swf" />
+	<param name="FlashVars" value="mp3=Fast lane - Eminem.mp3">
+</object>
+
+</td></tr></table><br>
+
+
+Jukebox Song List:
+<br><br>
+
+<!--   START COMMENT
+SONG LIST 
+this numbered list should be created identically
+for this and any subsequent song HTML document created.
+These are clickable links if you decide you want
+to jump from one song to another and not have
+them just play automatically.
+END COMMENT -->
+
+1. <a href="song1.html">Fast lane - Eminem</a> [4:10]<br>
+2. <a href="song2.html">Moon baby - Godsmack</a> [4:23]<br>
+3. <a href="song3.html">elastic heart sia</a> [4:19]<br>
+4. <a href="song4.html">cotton-eye-joe-rednex</a> [3:20]<br>
+5. <a href="song5.html">Punjabi rapstar - Bohemia</a> [3:30]<br>
+<br>
+Choose a song to play or let them just play automatically.
+<br><a href="javascript:self.close()">Close this window</a> to shut music off.<br>
+</center>
+</body>
+</html>
+
