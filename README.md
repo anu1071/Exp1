@@ -1,3 +1,3 @@
 # *---------------------------> HTML<-----------------------* #
-![](http://people.du.ac.in/~vmadan/HTML/html.jpg)
+<center>![](http://media.giphy.com/media/uqQdcqXG6SCWI/giphy.gif)</center>
 
